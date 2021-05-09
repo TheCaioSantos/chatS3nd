@@ -1,0 +1,51 @@
+body{
+	background-color: #f3f3f3;
+}
+
+.login-form{
+	background-color: #ffffff;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	margin-top: 50px;
+	box-shadow: rgb(51 51 51 / 20%) 0px 4px 6px 0px;
+}
+
+table{
+	font-size: 15px;
+	background-color: #ffffff!important;
+	box-shadow: rgb(51 51 51 / 20%) 0px 4px 6px 0px;
+}
+
+.imagem-avatar{
+	border-radius: 50%;
+	margin-right: 5px;
+	width: 50px;
+}
+
+.bloco-chat{
+	
+}
+
+.bloco-chat p{
+	color: #000;
+}
+
+#mensagens{
+	overflow-y: auto;
+	max-height: 600px;
+}
+
+
+.btn-group{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.corpo-mensagem{
+	margin-top: 5px;
+	background-color: #ffffff;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	box-shadow: rgb(51 51 51 / 20%) 0px 4px 6px 0px;
+	padding: 10px;
+}
