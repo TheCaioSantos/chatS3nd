@@ -50,7 +50,7 @@ if (isset($_SESSION['id_usuario'])) {
 			</div>
 
 			<div class="form-group">
-				<label for="senha-usuario">Senha</label>
+				<label for="senha-usuario">Email</label>
 				<input type="email" name="email-usuario" class="form-control" id="email-usuario" placeholder="exemplo@email.com" required>
 			</div>
 
