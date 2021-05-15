@@ -19,11 +19,7 @@ if (empty($_SESSION['id_usuario'])) {
 		require_once 'model/Usuario.php';
 		$usuario = new Usuario();
 
-		$quantidade_por_pagina = 5;
-		$page = isset($_GET['page']) && trim($_GET['page']) ? (int)$_GET['page'] : 1;
-		$inicio = $quantidade_por_pagina * $page - $quantidade_por_pagina;
-
-		$dados = $usuario->consultarUsuario($inicio, $quantidade_por_pagina);
+		$dados = $usuario->consultarUsuario();
 		?>
 
 		<table class="table table-sm table-bordered table-condensed table-hover text-center">
