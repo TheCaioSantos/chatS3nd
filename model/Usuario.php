@@ -12,20 +12,12 @@ class Usuario extends Conexao
 	public function consultarUsuario($inicio, $quantidade_por_pagina)
 	{
 		$sql = "SELECT * FROM usuario";
-
-		if (isset($inicio)) {
-			$sql .= " ORDER BY id_usuario DESC LIMIT $inicio, $quantidade_por_pagina";
-			$sql = $this->conexao->prepare($sql);
-		} else {
-			$sql .= " ORDER BY id_usuario DESC LIMIT $quantidade_por_pagina";
-			$sql = $this->conexao->prepare($sql);
-		}
+		$sql = $this->conexao->query($sql);
 		
-		$sql->execute();
 		if ($sql->rowCount() > 0) {
 			return $sql->fetchAll();
 		} else {
-			return array(5);
+			return array();
 		}	
 	}
 }
